@@ -1,0 +1,19 @@
+body {
+ font-family: 'Open Sans Condensed', 'Arial', 'droid-sans-mono', sans-serif;
+ overflow-x: hidden;
+ font-size: 1.6rem;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+*:focus {
+ outline: none;
+}
+
+html {
+ font-size: 62.5%;
+}
