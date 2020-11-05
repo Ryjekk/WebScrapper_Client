@@ -1,6 +1,7 @@
 import {Container, Inner} from "../Styles";
 import NavBar from "../Components/NavBar";
 import SearchBar from "../Components/SearchBar";
+import Card from "../Components/Card";
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
         <NavBar/>
         <Inner>
             <SearchBar/>
+            <Card/>
         </Inner>
+
     </Container>
   );
 }
