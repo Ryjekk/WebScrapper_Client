@@ -31,7 +31,7 @@ function Shows() {
     return (
         <Container>
             <NavBar/>
-            // TODO Strip it into a component
+            {/*// TODO Strip it into a component*/}
             <Inner>
                 <CenterBox>
                     <MediumHeading>Shows Schedule</MediumHeading>

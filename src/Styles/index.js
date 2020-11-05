@@ -8,5 +8,6 @@ export {
     MediumHeading,
     Heading,
     ParallaxBox,
-    CenterBox
+    CenterBox,
+    OptionsLink
 } from './styles';
