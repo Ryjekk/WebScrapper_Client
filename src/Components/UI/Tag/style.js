@@ -3,6 +3,7 @@ import {COLORS} from "../../../Styles";
 
 export const TagBox = styled.div`
   display: flex;
+  align-self: flex-end;
 `;
 
 export const TagInner = styled.div`

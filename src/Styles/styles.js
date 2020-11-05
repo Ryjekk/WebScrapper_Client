@@ -91,3 +91,16 @@ export const OptionsLink = styled(Options)`
     text-decoration: underline;
     letter-spacing: 1px;
 `;
+
+export const CenterBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ParallaxBox = styled(CenterBox)`
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+`;

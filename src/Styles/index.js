@@ -6,5 +6,7 @@ export {
     Paragraph,
     SmallHeading,
     MediumHeading,
-    Heading
+    Heading,
+    ParallaxBox,
+    CenterBox
 } from './styles';
