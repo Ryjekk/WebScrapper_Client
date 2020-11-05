@@ -32,8 +32,8 @@ const NavBar = () => {
           </Link>
       </NavBotL>
       <NavBotR>
-        <Link to='/nts'>
-          <Options>NTS 二</Options>
+        <Link to='/shows'>
+          <Options>shows 二</Options>
         </Link>
       </NavBotR>
     </Navigation>

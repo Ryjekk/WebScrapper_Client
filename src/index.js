@@ -6,7 +6,7 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 
 import App from './Views/App';
 import About from './Views/Pages/About'
-import Faq from './Views/Pages/Faq'
+import Shows from './Views/Pages/Shows'
 import NotFound from './Views/Pages/NotFound'
 
 const routing = (
@@ -14,7 +14,7 @@ const routing = (
         <Switch>
             <Route exact path='/' component={App} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/faq' component={Faq} />
+            <Route exact path='/shows' component={Shows} />
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />
         </Switch>

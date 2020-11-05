@@ -15,3 +15,12 @@ export const FetchData = async (query) => {
         return e.message;
     }
 };
+
+export const FetchSchow = async () => {
+    try {
+        const { data } = await axios.get(`https://nts-scrapper.herokuapp.com/api/v1/schedule`);
+        return data.data.schedules;
+    } catch (e) {
+        return e.message;
+    }
+}

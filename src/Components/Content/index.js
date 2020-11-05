@@ -10,7 +10,7 @@ const Content = () => {
 
     const contentJsx = data.map(el => (
         <Box key={el.id}>
-            <Img src={el.img}/>
+            <Img src={el.img} alt="img"/>
             <SmallHeading>
                 {el.artist[2]}
             </SmallHeading>
@@ -18,8 +18,8 @@ const Content = () => {
                 {el.artist[1]} / {el.artist[0]}
             </Paragraph>
             <IconDiv>
-                <a href={el.mixcloud} target="_blank">
-                    <img src={musicIcon} />
+                <a href={el.mixcloud} target="_blank"  rel="noreferrer">
+                    <img src={musicIcon} alt="ico"/>
                 </a>
             </IconDiv>
             {el.tags.map((el, i) => (
