@@ -69,7 +69,7 @@ export const Container = styled.div`
 export const Inner = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 50px 13%;
+    padding-top: 70px;
 
     @media (${QUERIES.medium}) {
         padding: 100px 8%;

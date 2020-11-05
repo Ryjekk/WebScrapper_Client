@@ -15,7 +15,7 @@ export const CenterBox = styled.div`
     @media (${QUERIES.medium}) {
         flex-direction: row;
         width: 50%;
-        padding: 10px 10px 7px 10px;
+        padding: 10px;
         //padding: 50px 0;
     }
 `;
