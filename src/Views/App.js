@@ -1,4 +1,4 @@
-import React, {useState, createContext} from 'react'
+import React, {useState, createContext, useEffect} from 'react'
 import {Container, Inner} from "../Styles";
 import NavBar from "../Components/NavBar";
 import SearchBar from "../Components/SearchBar";
@@ -9,7 +9,7 @@ export const myContext = createContext();
 
 function App() {
     const [query, setQuery] = useState();
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
 
     const getQuery = (e) => {
         const q = e.target.value;
@@ -20,6 +20,14 @@ function App() {
         const dataArray = await FetchData(query)
         setData(dataArray);
     }
+
+    useEffect( () => {
+        const fetchOnce = async () => {
+            const dataArray = await FetchData('')
+            setData(dataArray);
+        }
+        fetchOnce()
+    }, [])
 
     return (
         <myContext.Provider value={data}>
