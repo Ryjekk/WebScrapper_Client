@@ -7,15 +7,13 @@ const TagBox = props => {
     const {tags} = props;
 
     const tagJsx = tags.map((el, i) => (
-        <TagWrapper>
-            <Tag tags={el}/>
-        </TagWrapper>
+        <Tag tags={el ? el : "NO TAGS"}/>
     ))
 
     return (
-        <>
-        {tagJsx}
-        </>
+        <TagWrapper>
+            {tagJsx}
+        </TagWrapper>
     )
 }
 
