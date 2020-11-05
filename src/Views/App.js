@@ -11,7 +11,7 @@ import Content from "../Components/Content";
 export const myContext = createContext();
 
 function App() {
-    const [query, setQuery] = useState();
+    const [_, setQuery] = useState();
     const [data, setData] = useState([]);
 
     const getQuery = (e) => {
