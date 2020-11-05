@@ -17,11 +17,11 @@ function Shows() {
 
     const plan = shows.map(el => (
         <>
-            <MediumHeading>{el.day}:</MediumHeading>
+            <MediumHeading style={{marginLeft: "20px"}}>{el.day}:</MediumHeading>
             {el.shows.map(el => (
                 <ScheduleWrapper>
                     <p style={{color: "pink"}}>{el.time}</p>
-                    <SmallHeading style={{color: "dimgray", paddingLeft: "20px"}}>{el.artist}</SmallHeading>
+                    <SmallHeading style={{color: "dimgray"}}>{el.artist}</SmallHeading>
                     <Paragraph><a href={el.link}>Link</a></Paragraph>
                 </ScheduleWrapper>
             ))}
@@ -31,6 +31,7 @@ function Shows() {
     return (
         <Container>
             <NavBar/>
+            // TODO Strip it into a component
             <Inner>
                 <CenterBox>
                     <MediumHeading>Shows Schedule</MediumHeading>
