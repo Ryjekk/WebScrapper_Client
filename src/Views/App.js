@@ -1,8 +1,15 @@
+import {Container, Inner} from "../Styles";
+import NavBar from "../Components/NavBar";
+import SearchBar from "../Components/SearchBar";
+
 function App() {
   return (
-    <div className="App">
-      <p>home</p>
-    </div>
+    <Container>
+        <NavBar/>
+        <Inner>
+            <SearchBar/>
+        </Inner>
+    </Container>
   );
 }
 

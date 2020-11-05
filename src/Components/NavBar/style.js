@@ -65,7 +65,7 @@ export const Logo = styled.img`
     height: 70px;
     
     @media (${QUERIES.medium}) {
-        height: 120px;
+        height: 90px;
     }
 `;
 

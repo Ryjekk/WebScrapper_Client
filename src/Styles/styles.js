@@ -79,7 +79,7 @@ export const Inner = styled.div`
 // Links
 export const Options = styled.div`
     text-transform: uppercase;
-    color: ${COLORS.colorG1};
+    color: ${COLORS.colorG3};
     cursor: pointer;
     
     @media (${QUERIES.medium}) {
