@@ -1,8 +1,12 @@
 import React from "react";
+import {Container} from "../../Styles";
+import NavBar from "../../Components/NavBar";
 
 function About() {
     return (
-        <div>about</div>
+        <Container>
+            <NavBar/>
+        </Container>
     );
 }
 
