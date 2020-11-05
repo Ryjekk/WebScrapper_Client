@@ -22,9 +22,6 @@ const Drawer = () => {
         <Link to='/'>
           <Options>一 poshIsolation</Options>
         </Link>
-        <Link to='/'>
-          <Options>一 SCHEDULE</Options>
-        </Link>
       </LinkList>
   );
 };
