@@ -4,8 +4,7 @@ import {Overlay} from './style'
 const WelcomePage = () => {
     return (
         <>
-            <Overlay>
-            </Overlay>
+            <Overlay></Overlay>
         </>
     )
 };
