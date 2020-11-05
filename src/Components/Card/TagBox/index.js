@@ -3,11 +3,19 @@ import React from 'react';
 import Tag from '../../UI/Tag'
 import {TagWrapper} from './style'
 
-const TagBox = () => {
-    return (
+const TagBox = props => {
+    const {tags} = props;
+
+    const tagJsx = tags.map((el, i) => (
         <TagWrapper>
-            <Tag tag="TAG"/>
+            <Tag tags={el}/>
         </TagWrapper>
+    ))
+
+    return (
+        <>
+        {tagJsx}
+        </>
     )
 }
 

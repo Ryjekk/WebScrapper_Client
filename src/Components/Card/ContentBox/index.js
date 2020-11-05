@@ -7,7 +7,7 @@ import musicIcon from '../../../Assets/Icons/goOut.svg'
 
 const ContentBox = props => {
 
-    const {place, date, artist, mixcloud} = props;
+    const {place, date, artist, mixcloud, tags} = props;
     return (
         <ContentWrapper>
             <TopWrapper>
@@ -22,7 +22,7 @@ const ContentBox = props => {
                 </TopRow>
                 <BottomRow>{artist}</BottomRow>
             </TopWrapper>
-            <TagBox/>
+            <TagBox tags={tags}/>
         </ContentWrapper>
     )
 }

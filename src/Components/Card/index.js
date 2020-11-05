@@ -5,7 +5,6 @@ import {myContext} from '../../Views/App'
 
 const Card = () => {
     const data = useContext(myContext)
-    console.log(data)
 
     const cardJsx = data.map(el => (
         <CenterBox>
@@ -15,6 +14,7 @@ const Card = () => {
                 date={el.artist[0]}
                 artist={el.artist[2]}
                 mixcloud={el.mixcloud}
+                tags={el.tags}
                 key={el.id}/>
         </CenterBox>
     ))

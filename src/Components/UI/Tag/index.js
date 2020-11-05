@@ -3,10 +3,10 @@ import React from 'react';
 import {TagBox, TagInner} from './style'
 
 const Tag = props => {
-    const {tag} = props
+    const {tags} = props
     return (
         <TagBox>
-            <TagInner>{tag}</TagInner>
+            <TagInner>{tags}</TagInner>
         </TagBox>
 
     )
