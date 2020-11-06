@@ -19,7 +19,7 @@ const Drawer = () => {
         <Link to='/'>
           <Options>一 ntsPicks</Options>
         </Link>
-        <Link to='/'>
+        <Link to='/posh'>
           <Options>一 poshIsolation</Options>
         </Link>
       </LinkList>

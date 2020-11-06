@@ -7,6 +7,7 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 import App from './Views/App';
 import About from './Views/Pages/About'
 import Shows from './Views/Pages/Shows'
+import Posh from './Views/Pages/Posh'
 import NotFound from './Views/Pages/NotFound'
 
 const routing = (
@@ -15,6 +16,7 @@ const routing = (
             <Route exact path='/' component={App} />
             <Route exact path='/about' component={About} />
             <Route exact path='/shows' component={Shows} />
+            <Route exact path='/posh' component={Posh} />
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />
         </Switch>

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import {COLORS, QUERIES} from "../../Styles";
+import {COLORS, QUERIES, CenterBox} from "../../Styles";
+import bg from '../../Assets/img/lotm-posh-isolation-header.jpg'
 
 // Schows
 export const ScheduleWrapper = styled.div`
@@ -34,4 +35,17 @@ export const Day = styled.div`
     @media (${QUERIES.medium}) {
        padding: 25px;
     }
+`;
+
+// Posh
+export const Back = styled(CenterBox)`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(${bg});
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
 `;

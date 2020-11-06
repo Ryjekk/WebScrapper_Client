@@ -24,3 +24,19 @@ export const FetchSchow = async () => {
         return e.message;
     }
 }
+
+export const FethPosh = async () => {
+    try {
+        const { data } = await axios.get(`https://nts-scrapper.herokuapp.com/api/v1/show/poshIsolation`);
+        const toModify =  data.data.data;
+        return toModify.map((el,i) => ({
+            artist: el.artist.split('\n'),
+            tags: el.tags.split('\n'),
+            mixcloud: el.mixcloud,
+            img: el.img,
+            id: i
+        }))
+    } catch (e) {
+        return e.message;
+    }
+}
